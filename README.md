@@ -30,69 +30,30 @@
 - torchstat
 - scipy
 
-可以使用以下命令安装必要的Python库：
+你可以使用以下命令安装必要的Python库：
 
 ```bash
-pip install numpy pandas torch matplotlib torchstat scipy
-
-#运行项目
-配置数据路径
-
-在代码中，将数据集路径修改为实际存放位置。例如：
-
-python
-
-data0 = np.load(r"C:\路径\到\PRONOSTIA-bearing dataset\ts_1.npy")
-运行训练脚本
-
-确保所有依赖库已安装，然后运行主训练脚本：
-
-bash
-
-python src/main.py
-
-
-#数据集说明
-PRONOSTIA Bearing Dataset
-来源: PRONOSTIA
-内容: 包含多个轴承的振动信号数据，适用于RUL预测任务。
-路径: data/PRONOSTIA-bearing dataset/resized file/
-XJTU-SY Bearing Dataset
-来源: 西安交通大学实验室
-内容: 包含不同工况下轴承的振动信号数据。
-路径: data/XJTU-SY-bearing dataset/condition1/
-
-
-#使用方法
-使用方法
-数据预处理
-
-代码中已包含数据加载和预处理步骤，包括最大-最小归一化和标签生成。
-
-python
-
-def max_min_normalization(raw_features, whole_data):
-    # 归一化代码
-数据加载
-
-使用自定义的数据加载器生成源域和目标域的训练集。
-
-python
-
-source_train_loader = Source_Train_Loader(...)
-target_train_loader = Target_Train_Loader(...)
-模型训练
-
-调用train函数进行模型训练。
-
-train(model)
-模型测试
-
-加载最优模型后，进行多次测试以估计模型的贝叶斯不确定性。
-
-model.load_state_dict(torch.load('model_bearing1_3.pth'))
-test(model)
-
-
-
+pip install -r requirements.txt
+## requirements.txt 示例：
+numpy
+pandas
+torch
+matplotlib
+torchstat
+scipy
+##项目结构
+├── data
+│   ├── PRONOSTIA-bearing dataset
+│   │   └── resized file
+│   └── XJTU-SY-bearing dataset
+│       └── condition1
+├── Experimental results
+│   └── CA-Transformer RUL prediction results save
+├── images
+│   ├── prediction-results.png
+│   └── ablation-study.png
+├── src
+│   └── main.py
+├── README.md
+└── requirements.txt
 
