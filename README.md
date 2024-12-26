@@ -12,7 +12,6 @@
 - [模型架构](#模型架构)
 - [结果展示](#结果展示)
 - [贡献者](#贡献者)
-- [许可证](#许可证)
 
 ## 安装与运行
 
@@ -50,4 +49,7 @@ pip install -r requirements.txt
 步骤 7：模型测试： 训练有素的模型通过分析不同降解特征来评估目标域内测试轴承的 RUL。为了在测试过程中增强模型的泛化能力，应用 MC Dropout 将其扩展为近似贝叶斯双通道神经网络。这种方法可以推导出测试轴承 RUL 的置信区间 (Cis)，从而有效量化预测结果的不确定性。
 
 ## 结果展示
-[结果展示的链接](https://github.com/user-attachments/files/18249182/requirements.txt)
+[结果展示的链接](https://github.com/RosenKreutzs/CANN-GT-BDA/blob/main/test-Bearing1_3-CA-Transformer-with%20MC%20Dropout-CIs.ipynb)
+
+## 贡献者
+Yuhang Song
