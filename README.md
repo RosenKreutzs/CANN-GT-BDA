@@ -34,26 +34,4 @@
 
 ```bash
 pip install -r requirements.txt
-## requirements.txt 示例：
-numpy
-pandas
-torch
-matplotlib
-torchstat
-scipy
-##项目结构
-├── data
-│   ├── PRONOSTIA-bearing dataset
-│   │   └── resized file
-│   └── XJTU-SY-bearing dataset
-│       └── condition1
-├── Experimental results
-│   └── CA-Transformer RUL prediction results save
-├── images
-│   ├── prediction-results.png
-│   └── ablation-study.png
-├── src
-│   └── main.py
-├── README.md
-└── requirements.txt
-
+[requirements.txt](https://github.com/user-attachments/files/18249182/requirements.txt)
